@@ -1,0 +1,275 @@
+/* Job Application Portal Custom Animations CSS */
+.animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-fade-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-right {
+    animation: fadeInRight 0.6s ease forwards;
+}
+
+/* New animations for the refreshed design */
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for cards */
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(38, 70, 83, 0.1);
+    border-top: 3px solid var(--primary);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(231, 111, 81, 0.15);
+}
+
+/* Pulse animation for buttons */
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(42, 157, 143, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(42, 157, 143, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(42, 157, 143, 0);
+    }
+}
+
+/* Float animation for images */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Gradient animation for section backgrounds */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-gradient-animate {
+    background: linear-gradient(-45deg, #264653, #2a9d8f, #e76f51, #f4a261);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.animate-fade-left {
+    animation: fadeInLeft 0.6s ease forwards;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 0.7s ease forwards;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 2s infinite;
+}
+
+.animate-delay-1 {
+    animation-delay: 0.3s;
+}
+
+.animate-delay-2 {
+    animation-delay: 0.6s;
+}
+
+.transition-300 {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-bright:hover {
+    filter: brightness(1.1);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+/* Scrolled header effect */
+.header-scrolled {
+    background: rgba(37, 99, 235, 0.95) !important;
+    padding: 0.7rem 0 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+/* Enhance card elements */
+.enhanced-card {
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.enhanced-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Color enhancements based on blue palette */
+.bg-primary-blue {
+    background-color: #2563eb !important;
+}
+
+.bg-secondary-blue {
+    background-color: #0284c7 !important;
+}
+
+.bg-accent-blue {
+    background-color: #0ea5e9 !important;
+}
+
+.text-primary-blue {
+    color: #2563eb !important;
+}
+
+.text-secondary-blue {
+    color: #0284c7 !important;
+}
+
+.text-accent-blue {
+    color: #0ea5e9 !important;
+}
+
+/* Beautiful gradient backgrounds */
+.bg-gradient-blue {
+    background: linear-gradient(120deg, #2563eb 0%, #0284c7 100%) !important;
+    color: white;
+}
+
+/* Button enhancements */
+.btn-enhanced {
+    transition: all 0.3s ease;
+}
+
+.btn-enhanced:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Feature icon enhancement */
+.feature-icon-enhanced {
+    transition: all 0.4s ease;
+}
+
+.enhanced-card:hover .feature-icon-enhanced {
+    transform: scale(1.1);
+}
+
+/* Section with decorative elements */
+.section-decorative {
+    position: relative;
+    overflow: hidden;
+}
+
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.decorative-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+    background-color: #0ea5e9;
+}
+
+.decorative-circle-2 {
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, 30%);
+    background-color: #2563eb;
+}
